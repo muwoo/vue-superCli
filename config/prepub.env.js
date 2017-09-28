@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = {
-  env: 'prod',
+  env: 'prepub',
   // globalConfig 中的 key 需要为 JSON 字符串
   globalConfig: {
-    NODE_ENV: JSON.stringify("production")
+    NODE_ENV: JSON.stringify("prepub")
   },
   sourceMap: true,
   index: path.resolve(__dirname, '../dist/index.html'),

@@ -21,12 +21,19 @@
 </template>
 
 <script>
+import Api from '../api/index'
+
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    Api.example.query_get().then(res => {
+      console.log(res)
+    })
   }
 }
 </script>
